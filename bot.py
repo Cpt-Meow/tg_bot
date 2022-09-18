@@ -40,7 +40,7 @@ def main():
 
     dp = mybot.dispatcher
     dp.add_handler(CommandHandler('start', greet_user))
-    dp.add_handler(CommandHandler("planet", get_info_planets))
+    dp.add_handler(CommandHandler('planet', get_info_planets))
     dp.add_handler(MessageHandler(Filters.text, talk_to_me))
 
     logging.info('bot started')
