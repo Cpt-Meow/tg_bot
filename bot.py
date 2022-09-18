@@ -1,6 +1,8 @@
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
 import logging
 import settings
+import ephem
+import datetime
 
 
 # proxy = {'proxy_url': settings.proxy_url,
